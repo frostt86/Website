@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>CheckOutForm</title>
+  <meta charset="UTF-8"> 
+
+  <!-- import css  -->
+  <link rel="stylesheet" href="style.css/CheckOutForm.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+</head>
+
+<body>
+<!--getting user details-->
+<div class="user_details">
+    
+    <h2 class='title'>Enter Your Details</h2>
+    <form class="formin">
+        <div>
+        <label for="fName"><i class="fa fa-user"></i>First Name</label><br>
+        <input id="fName" type="text" >
+        </div>
+        <div>
+        <label for="lName"><i class="fa fa-user"></i>Last Name</label><br>
+        <input id="lName" type="text" >
+        </div>
+        <div>
+        <label for="email"><i class="fa fa-envelope"></i>Email</label><br>
+        <input id="email" type="text">
+        </div>
+        <div>
+        <label for="address"><i class="fa fa-user"></i>Address</label><br>
+        <input id="address" type="text" >
+        </div>
+        <div>
+            <label for="payment"><i class="Dropdown"></i> Payment</label><br>
+            <select id="payment" name="payment">
+                <option value="cash_on_delivery">Cash on Delivery</option>
+                <option value="visa_card">Visa Card</option>
+            </select>
+        </div>
+        
+        
+        <button type="submit" class="button buyBtn">Buy Now</button>
+        <button type="reset" class="button clearBtn">Clear </button>
+    </form>
+</div>
+<footer>
+    <div class="footercontent">
+        <img id="climatelogo" src="images/climatelogo.png"  alt="logo" >
+        <div class="p">
+        <p id="copy">&copy; 2024 Plax. All rights reserved. Designed by <a href="editorspagr_O.html"><i>Omindu Vivandith</i></a></p>
+    </div>
+    </div>
+    </footer>
+
+
+
+
+    
+<script src="javascript/CheckOutForm.js"></script>
+
+</body>
+</html>

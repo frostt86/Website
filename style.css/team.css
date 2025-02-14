@@ -1,0 +1,160 @@
+body {
+    background-image: url('climate2.jpg');
+    background-size: cover;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #005249;
+    
+}
+h1{
+    font-weight: 900;
+    color: #005249;
+    font-style: initial;
+    text-align: center;
+
+}
+h3{
+    text-align: center;
+}
+
+.team {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+  
+.member {
+    margin-right: 60%;
+    margin-bottom: 30px;
+    position: relative;
+    cursor: pointer;
+    
+}
+  
+.member img {
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.member img:hover{
+    transform: scale(1.2);
+}
+  
+.member .details1,
+.member .details2,
+.member .details3,
+.member .details4 {
+    display: none;
+    position: absolute;
+    top: 15px;
+    right: -550px; 
+    background-color: rgba(238, 245, 248, 0.8);
+    color: black;
+    padding: 10px;
+    width: 400px;
+    border: 3px;
+}
+  
+.member:hover .details1,
+.member:hover .details2,
+.member:hover .details3,
+.member:hover .details4 {
+    display: block;
+}
+
+header {
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    background-color: #005249;
+    color: #fff;
+    padding: 20px;
+    position: sticky;
+    
+}
+
+#logo{
+    height: 75px;
+    width: 75px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.466), 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+nav {
+    display: flex;
+    background-color: #ffffff;
+    padding: 5px;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #005249;
+    
+}
+
+.navlist li {
+    display: inline-block;
+    padding: 15px 30px 0px 15px;
+    color: aliceblue;
+    font-family: Poppins;
+    font-weight: bold;
+    position: sticky;
+    overflow: hidden;
+    
+}
+
+.navlist li a {
+    color: #005249;
+    text-decoration: none;
+    font-size: 20px;
+}
+.navlist li a::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #005249;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+
+}
+.navlist li a:hover::after{
+    width: 70%;
+}
+.navlist li a:hover {
+    color: rgb(22, 126, 1);
+}    
+
+.navlist li a:active {
+    color: aquamarine;
+}
+
+
+#footer {
+    background-color: #005249;
+    color: white;
+    padding: 20px;
+    top: 10%;
+    bottom: 0; 
+    width: 100%; 
+    text-align: right;
+    
+}
+
+#green-box {
+    background-color: #005249;
+    height: 20px; 
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#white-box {
+    background-color: white;
+    padding: 20px;
+    margin-top: 10px;
+    align-items: flex-end; 
+
+}
+footer #white-box img{
+    width: 75px;
+    height: 75px;
+  
+}

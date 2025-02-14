@@ -1,0 +1,231 @@
+/* Reset default margin, padding, and box-sizing */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* Header styles */
+header {
+  position: fixed;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  background-color: #00463d;
+  color: #fff;
+  padding: 20px;
+}
+/* Logo styles */
+#logo{
+  height: 75px;
+  width: 75px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.466), 0 1px 5px rgba(0, 0, 0, 0.3);
+}
+/* Navigation styles */
+nav {
+  display: flex;
+  background-color: #ffffff;
+  padding: 5px;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #00463d;
+}
+/* Navigation list item styles */
+.navlist li {
+  display: inline-block;
+  padding: 15px 30px 0px 15px;
+  color: aliceblue;
+  font-family: Poppins;
+  font-weight: bold;
+  position: sticky;
+  overflow: hidden;
+}
+/* Navigation link styles */
+.navlist li a {
+  color:#00463d;
+  text-decoration: none;
+  font-size: 20px;
+}
+/* Navigation link pseudo-element styles */
+.navlist li a::after{
+  content: '';
+  width: 0%;
+  height: 2px;
+  background: #00463d;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+/* Navigation link hover styles */
+.navlist li a:hover::after{
+  width: 70%;
+}
+/* Navigation link hover styles */
+.navlist li a:hover {
+  color: rgb(22, 126, 1);
+}    
+/* Navigation link active styles */
+.navlist li a:active {
+  color: rgb(9, 122, 85);
+}
+/* Heading styles */
+#h2{
+  position: absolute;
+  top: 28%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  font-size: xx-large;
+  font-family: 'Lemon/Milk', sans-serif;
+  color:#082540;
+  text-align:center;
+  background: rgba(255, 255, 255, 0.281);
+  backdrop-filter: blur(15px);
+  padding: 5px;
+  border-radius: 20px; 
+}
+/* Form input styles */
+input[type="text"],input[type="email"]{
+  width: 20%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+/* Form fieldset styles */
+fieldset{
+    position: absolute;
+    top: 98%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 30px ;
+    width: fit-content;
+    font-family:Poppins ;
+    font-weight: bold;
+    font-size: 18px;
+    background: rgba(255, 255, 255, 0.466);
+    backdrop-filter: blur(15px);
+    padding: 20px; 
+    animation: fadeIn 1.5s forwards;
+}
+/* Button styles */
+.but{
+  background-color: #082540;
+  border: 4px solid  #082540;
+  color: #fff;
+  padding: 15px 32px;
+  float: left;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 4px 2px;
+  margin-top: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: 0.5s ease-in-out;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1), 0px 1px 5px rgba(0, 0, 0, 0.08);
+}
+.but2{
+  background-color: #082540;
+  border: 4px solid  #082540;
+  color: #fff;
+  padding: 15px 32px;
+  float: right;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 4px 2px;
+  margin-top: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: 0.5s ease-in-out;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1), 0px 1px 5px rgba(0, 0, 0, 0.08);
+}
+/* Button hover styles */
+.but:hover,.but2:hover{
+  background-color:transparent;
+  border: 4px solid  #ff322b;
+  color: #ff322b;
+}
+.but:active,.but2:active{
+  background-color: #005249;
+}
+/*body styling for textarea lables and the hover functions*/
+body textarea{
+  width: 50%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+body textarea:hover{
+    border-color: #ff322b;
+
+}
+body label{
+    margin-bottom: 5px;
+    color: #333;
+}
+fieldset input{
+    border-radius: 7px;
+    border-color: white;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1), 0px 1px 3px rgba(0, 0, 0, 0.08); 
+ 
+}
+fieldset input:hover{
+    border-color: #ff322b;
+
+}
+input[type="radio"] {
+    appearance: none; 
+    width: 15px; 
+    height: 15px; 
+    border-radius: 50%; 
+    border: 2px solid #082540; 
+    outline: none;
+  }
+input[type="radio"]:checked{
+    background-color:#ff322b;
+}/* Footer styles */
+.ftr{
+  position: absolute;
+  text-align: center;
+  background-color: #00463d;
+  height: 170px;
+  width: 1904px;
+  top: 165%;
+}
+/* Footer container styles */
+footer{
+  position: absolute;
+  top: 168%; 
+  left: 50%;
+  transform: translate(-50%,-0%);
+  background-color: #ffffff;
+  height: 115px;
+  width: 1904px;
+}
+/* Copyright text styles */
+#copy {
+  position: absolute;
+  top: 83%; 
+  left: 50%;
+  transform: translate(-50%,-0%);
+  text-align: center;
+}
+/* Footer logo styles */
+#footerlogo{
+  position: absolute;
+  top: 156%; 
+  left: 40%;
+  transform: translate(-40%,-60%);
+}
+/* Fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0; 
+      }
+      to {
+        opacity: 1; 
+      }
+    }

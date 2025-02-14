@@ -1,0 +1,139 @@
+body {
+    padding: 0;
+    margin: 0;
+    width: auto; /* Setting the width to auto */
+    font-family: Poppins;
+}
+
+header {
+    background-position: center; /* Setting background position of the header to center */
+    background-size: cover; /* Making the background covers the entire header */
+    background-color: #00463d; /* Setting the background color */
+    color: #fff; /* Text color */
+    padding: 20px; /* Padding around the header content */
+    position: sticky; /* Making the header stick to the top  */
+    width: auto; /* Setting width to auto */
+}
+
+#logo {
+    height: 75px; /* Setting logo height */
+    width: 75px; /* Setting logo width */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.466), 0 1px 3px rgba(0, 0, 0, 0.3); /* Adding box shadow effect to the logo */
+}
+
+nav {
+    display: flex; /* Displaying navigation items horizontally parallel */
+    background-color: #ffffff; /* Setting the background color  */
+    padding: 5px; /* Set the padding  */
+    justify-content: space-between; /* Adding a space between */
+    align-items: center; /* Displaying items vertically */
+    border-bottom: 2px solid  #00463d; /* Adding a bottom border */
+}
+
+.navlist li {
+    display: inline-block; /* Displaying navigation items inline */
+    padding: 15px 30px 0px 15px; /* Setting padding around navigation items */
+    color: aliceblue; /* Text color */
+    font-family: Poppins; 
+    font-weight: bold; 
+    position: sticky; /* Making the navigation sticky */
+    overflow: hidden; /* Hiding the content beyond */
+}
+
+.navlist li a {
+    color: #00463d; /* Setting the link color */
+    text-decoration: none; 
+    font-size: 20px; 
+}
+
+.navlist li a::after {
+    content: ''; /* Adding content after links */
+    width: 0%; /* Initial width */
+    height: 2px; /* Setting the height of the hover effect */
+    background: #00463d; /* Setting the background color */
+    display: block; /* Displaying as a block element */
+    margin: auto; /* Centering horizontally */
+    transition: 0.5s; /* Adding transition effect */
+}
+
+.navlist li a:hover::after {
+    width: 70%; /* Setting the width on hover */
+}
+
+.navlist li a:hover {
+    color: rgb(22, 126, 1); /* Adding the color on hover */
+}
+
+.navlist li a:active {
+    color: aquamarine; /* Color on active state */
+}
+
+.ftr {
+    position: absolute; /* Positioning the footer */
+    text-align: center; /* Centering the text */
+    background-color: #00463d; /* Setting the background color */
+    height: 140px; /* Setting the height of the footer */
+    width: 100%; /* Setting the width of the footer */
+    top: 118%; /* Position the footer from the top */
+}
+
+footer {
+    position: absolute; /* Positioning the footer */
+    top: 121%; /* Position from the top */
+    left: 50%; /* Aligning to the center horizontally */
+    transform: translate(-50%, -1%); /* Centering horizontally */
+    background-color: #ffffff; /* Background color */
+    height: 100px; /* Height of the footer */
+    width: 100%; /* Width of the footer */
+}
+
+#copy {
+    text-align: center; /* Centering the text */
+    position: absolute; /* Positioning the footer */
+    top: 65%; /* Position from the top */
+    left: 50%; /* Aligning to the center horizontally */
+    transform: translate(-50%, -1%); /* Centering horizontally */
+}
+
+#footerlogo {
+    position: absolute; /* Positioning the logo */
+    top: 100%; /* Position from the top */
+    left: 40%; /* Aligning to the center horizontally */
+    transform: translate(-40%, -60%); /* Centering horizontally and vertically */
+}
+
+#js g:hover polyline,
+            #js g:hover line {
+                fill: none; /* Setting fill to none */
+                stroke-width: 2; /* Setting stroke width */
+                stroke: white; /* Setting stroke color */
+            }
+
+            #js g:hover g text,
+            #js g:hover text {
+                font-weight: bold; /* Setting font weight */
+                fill: white; /* Setting fill color */
+            }
+
+            #js g:hover polygon,
+            #js g:hover rect,
+            #js g:focus polygon,
+            #js g:focus rect {
+                fill: hsla(24, 20%, 50%, .3); /* Setting fill color with transparency */
+                stroke: white; /* Setting stroke color */
+                stroke-width: 2; /* Setting stroke width */
+            }
+
+            #js g:hover circle,
+            #js g:focus circle {
+                fill: hsla(24, 20%, 50%, .3); /* Setting fill color with transparency */
+                stroke: white; /* Setting stroke color */
+                stroke-width: 2; /* Setting stroke width */
+            }
+            
+            #js g:hover path,
+            #js g:focus path {
+                fill: hsla(24, 20%, 50%, .3); /* Setting fill color with transparency */
+                stroke: white; /* Setting stroke color */
+                stroke-width: 2; /* Setting stroke width */
+            }

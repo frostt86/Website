@@ -1,0 +1,268 @@
+/*Setting margin and padding to 0*/
+body{
+    font-family:Poppins;
+    margin:0;
+    padding:0;
+}
+
+header {
+    background-position: center; /* Positioning the background */
+    background-size: cover; /* Setting the background image size to appear full screen */
+    position: relative; /* Positioning relatively */
+    background-color: #00463d; /* Setting background color */
+    color: #fff; /* Setting text color */
+    padding: 20px; /* Adding padding */
+    position: sticky; /* Fixing the header */
+    width: auto; /* Set the width to adjust auto */
+}
+
+#logo{/*Setting height, width and a box shadow to the logo*/
+    height: 75px;
+    width: 75px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.466), 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+nav {
+    display: flex; /* Setting navigation display to horizontally parallel */
+    background-color: #ffffff; /* Setting background color */
+    padding: 5px; /* Added padding */
+    justify-content: space-between; /* adding space between  */
+    align-items: center; /* Centering items vertically */
+    border-bottom: 2px solid  #00463d; /* Adding bottom border */
+    
+}
+
+.navlist li {
+    display: inline-block; /* Displaying navigation items inline */
+    padding: 15px 30px 0px 15px; /* Setting padding around navigation items */
+    color: aliceblue; /* Text color */
+    font-family: Poppins; 
+    font-weight: bold; 
+    position: sticky; /* Making the navigation sticky */
+    overflow: hidden; /* Hiding the content beyond */  
+}
+
+.navlist li a {
+    color:  #00463d; /* Setting the link color */
+    text-decoration: none; 
+    font-size: 20px; 
+}
+.navlist li a::after{
+    content: ''; /* Adding content after links */
+    width: 0%; /* Initial width */
+    height: 2px; /* Setting the height of the hover effect */
+    background:  #00463d; /* Setting the background color */
+    display: block; /* Displaying as a block element */
+    margin: auto; /* Centering horizontally */
+    transition: 0.5s; /* Adding transition effect */
+
+}
+.navlist li a:hover::after {
+    width: 70%; /* Setting the width on hover */
+}
+
+.navlist li a:hover {
+    color: rgb(22, 126, 1); /* Adding the color on hover */
+}
+
+.navlist li a:active {
+    color: aquamarine; /* Color on active state */
+}
+
+#scale{/*Resizing a image*/
+    width: 100%;
+    height: 100%;
+}
+
+.imageGallery{
+    width: auto; /* Setting width to adjust auto */
+    height: 100vh; /* Setting height  */
+    overflow: hidden; /* Hiding overflow */
+    position: relative; /* Positioning relatively */
+}
+
+.imageGallery .imagesList .images{
+    position: absolute; /* Positioning absolutely */
+    inset: 0 0 0 0; /* Positioning to cover container */
+    transition: transform 0.5s ease; /* Adding transition effect */
+}
+
+.images .image{
+    width: 100%; /* Setting the width to 100% */
+    height: 100%; /* Setting the height to 100% */
+    object-fit: cover; /* Scaling images to cover the backgroung */
+}
+
+.images .description{
+    position: absolute; /* Positioning absolutely */
+    top: 15%; /* Setting the top position */
+    width: auto; /*Setting the width to adjust auto  */
+    max-width: 80%; /* Setting the maximum width */
+    left: 20%; /* Setting left position */
+    transform: translateX(-50%); /* Centering horizontally */
+    background-color: #000000b7; /* Setting background color with transparent black */
+    color: #fff; /* Setting text color */
+    border-radius: 5px; /* Adding border radius */
+    text-align: center; /* Centering text */
+    letter-spacing: 1px; /* Adding letter spacing */
+    
+}
+
+.title{
+    font-weight: bolder; /* Setting the font weight to bold */
+    font-size: 25px; /* Setting the font size */
+}
+
+.content {
+    padding-top: 10px; /* Adding padding */
+    font-size: 25px; /* Settingthe font size */
+    font-weight: 50px; /* Setting the font weight to lighter */
+    
+    
+}
+
+.thumbnailImages {
+    position: absolute; /* Positioning absolutely */
+    bottom: 10px; /* Setting the bottom position */
+    left: 0; /* Setting  the left position */
+    width: 100%; /* Setting the width to maximum content */
+    z-index: 100; /* Setting the z-index to show above all elements*/
+    display: flex; /* Setting the display to flex  */
+    gap: 8px; /* Setting the gap between items */
+    padding: 30px; /* Adding padding */
+    overflow: hidden; /* Hiding overflow beyond content */
+}
+
+.thumbnailImages .images{
+    width: 130px; /* Setting the width */
+    height: 160px; /* Setting the height */
+    flex-shrink: 0; /* Preventing shrinking */
+    position: relative; 
+    border: 2px solid transparent; /* Adding a border */
+    transition: transform 0.3s ease; /* Adding a transition effect */
+}
+
+.thumbnailImages .images .image{
+    width: 100%; /* Setting the width to 100% */
+    height: 100%; /* Setting the height to 100% */
+    object-fit: cover; /* Scaling image to cover the background*/
+    border-radius: 20px; /* Adding a border radius */
+}
+
+.slide{
+    position: absolute; /* Positioning absolutely */
+    bottom: 25%; /* Setting the bottom position */
+    right: -10%; /* Setting the right position */
+    width: 400px; /* Setting the width */
+    max-width: 40%; /* Setting  the maximum width */
+    display: flex; /* Setting display to flex */
+    gap: 10px; /* Setting gap between items */
+    align-items: center; /* Centering items vertically */
+}
+
+.slide button{
+    width: 60px; /* Setting the width */
+    height: 60px; /* Setting  the height */
+    background-color: #fff; /* Setting the background color */
+    border: none; /* Removing the border */
+    font-family: monospace; /* Setting the font family */
+    color: gray; /* Setting the text color */
+    border-radius: 50%; /* Adding a border radius */
+    font-weight: bold; /* Setting the font weight to bold */
+    font-size: larger; /* Setting the font size */
+    transition: 0.4s; /* Adding a transition effect */
+    z-index: 100; /* Setting the z-index */
+}
+
+.slide button:hover {
+    background-color: grey; /* Set to change the background color on hover */
+    color: #fff; /* Set to change the text color on hover */
+    border-radius: 50%; /* Adding a border radius */
+}
+
+.thumbnailImages .images:hover {
+    border: 2px solid #fff; /* Adding a border on hover */
+    border-radius: 20px; /* Adding a border radius on hover */
+    cursor: pointer; /* Set to change the cursor on hover*/
+    transform: scale(1.1); /* Scaling up when hovered*/
+    z-index: 1; /* Setting the z-index */
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); /* Adding a box shadow on hover */
+}
+
+.thumbnailImages .images:not(:hover) {
+    transform: scale(0.9); /* Scaling down the images after hovering */
+    transition: transform 0.3s ease; /* Adding a transition effect */
+}
+
+.thumbnailImages::before {
+    content: ''; /* Adding a pseudo-element */
+    position: absolute; /* Positioning absolutely */
+    bottom: 0; /* Setting the bottom position */
+    left: 0; /* Setting the left position */
+    right: 0; /* Setting the right position */
+    width: 100%; /* Setting the width */
+    height: 200px; /* Setting the height */
+    background: linear-gradient(to bottom, rgba(54, 50, 50, 0), rgba(0, 0, 0, 0.8)); /* Adding a gradient to the background */
+    pointer-events: none; /* Disabling pointer events */
+}
+
+.thumbnailImages .description {
+    position: absolute; /* Positioning absolutely */
+    bottom: -40px; /* Setting the bottom position */
+    left: 0; /* Setting the left position */
+    right: 0; /* Setting the right position */
+    text-align: center; /* Centering the text */
+    color: white; /* Setting  the text color */
+    font-size: 18px; /* Setting the font size */
+    font-weight: bold;
+    opacity: 0; /* Setting initial opacity */
+    transition: opacity 0.3s ease; /* Adding a transition effect */
+}
+
+.thumbnailImages .images:hover .description {
+    bottom: 10px; /* Setting the bottom position on hover */
+    opacity: 0; /* Setting the opacity on hover */
+    pointer-events: none; /* Disabling pointer events on hover */
+}
+
+#open {
+    font-family: monospace; /* Setting the font family */
+}
+
+.ftr{
+    position: absolute; /* Positioning the footer */
+    text-align: center; /* Centering the text */
+    background-color: #00463d; /* Setting the background color */
+    height: 140px; /* Setting the height of the footer */
+    width: 100%; /* Setting the width of the footer */
+    top: 115%; /* Position the footer from the top */
+    z-index: 119;
+   
+}
+footer{
+    position: absolute;
+    top:118%;
+    left: 50%;
+    transform: translate(-50%,-1%);
+    background-color: #ffffff;
+    height: 100px;
+    width: 100%;
+    z-index: 120;
+}
+#copy {
+    position: absolute;
+    top:55%;
+    left: 50%;
+    transform: translate(-50%,-1%);
+    text-align: center;
+}
+
+#footerlogo{
+    position: absolute;
+    top: 600%; /* Adjust top value as needed */
+    left: 40%;
+    transform: translate(-40%,-60%);
+    z-index: 120;
+}
+
+

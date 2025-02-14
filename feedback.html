@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plax - Feedback</title>
+    <!-- Link to external CSS file for styling -->
+    <link rel="stylesheet" href="style.css/feedbackstyle.css">
+
+     <!-- Link to Google Fonts -->
+    <link href="https://fonts.cdnfonts.com/css/lemonmilk" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+</head>
+<body>
+    <header>   <!-- Header section -->
+        <nav>
+            <!-- Logo with link to home page -->
+            <a href="home.html"> <img id="logo" src="images/logo.png" alt="logo"></a>
+
+            <!-- Navigation menu -->
+            <ul class="navlist">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="sitemap.html">Site map</a></li>
+                <li><a href="team.html">Team</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="userprofile.html"><span class="material-symbols-outlined" style="font-size: 40px; top: 10%; background-color:#002746;color: aliceblue;border-radius:50% ;">
+                    account_circle
+                    </span></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Image for background -->
+    <img src="images/feedbackformback.jpg" alt="back" id="back">
+    <div id="h2"><h2>Feedback Form</h2></div>
+
+    <!-- Feedback form -->
+    <form id="feedbackForm" action="/submit_form.php" method="post" onsubmit="return handleSubmit()">
+        <fieldset>
+
+            <!-- Input fields for name and email -->
+            <label for="fname">Enter your name: </label>
+            <input type="text" id="fname" name="fname" placeholder="Enter name here" required><br><br>
+
+            <label for="e-mail">Enter your e-mail: </label>
+            <input type="email" id="e-mail" name="e-mail" placeholder="Enter e-mail here"><br><br>
+
+            <!-- Radio buttons for questions -->
+            <label for="visitedwebsite1">Was this your first time visiting? </label><br><br>
+            <input type="radio" name="visitedwebsite" id="visitedwebsite1" value="Yes" >
+            <label for="visitedwebsite1">Yes</label>
+
+            <input type="radio" name="visitedwebsite" id="visitedwebsite2" value="No" >
+            <label for="visitedwebsite2">No</label><br><br>
+
+            <label for="navwebsite1">Was this website informative and easy to navigate through?  </label><br><br>
+
+            <input type="radio" name="navwebsite" id="navwebsite1" value="Yes" >
+            <label for="navwebsite1">Yes</label>
+
+            <input type="radio" name="navwebsite" id="navwebsite2" value="No" >
+            <label for="navwebsite2">No</label><br><br>
+
+            <label for="reqs1">If "No", suggest any improvements in the future:</label><br><br>
+            <textarea id="reqs1" name="reqs" placeholder="Add your message here..." required></textarea><br><br>
+
+            <!-- Radio buttons for rating -->
+            <label for="rate1"> How satisfied are you with Our services?<br>Choose from 0 to 10, with 1 being "Not satisfied at all !" and 10 being "Extremely satisfied!" </label><br><br>
+
+            <input type="radio" name="rate" id="rate1" value="1" >
+            <label for="rate1">1</label>
+
+            <input type="radio" name="rate" id="rate2" value="2" >
+            <label for="rate2">2</label>
+
+            <input type="radio" name="rate" id="rate3" value="3" >
+            <label for="rate3">3</label>
+
+            <input type="radio" name="rate" id="rate4" value="4" >
+            <label for="rate4">4</label>
+
+            <input type="radio" name="rate" id="rate5" value="5" >
+            <label for="rate5">5</label>
+
+            <input type="radio" name="rate" id="rate6" value="6" >
+            <label for="rate6">6</label>
+            
+            <input type="radio" name="rate" id="rate7" value="7" >
+            <label for="rate7">7</label>
+
+            <input type="radio" name="rate" id="rate8" value="8" >
+            <label for="rate8">8</label>
+
+            <input type="radio" name="rate" id="rate9" value="9" >
+            <label for="rate9">9</label>
+
+            <input type="radio" name="rate" id="rate10" value="10" >
+            <label for="rate10">10</label><br><br>
+
+            <label for="recwebsite1">Would you recomend our services?</label><br><br>
+
+            <input type="radio" name="recwebsite" id="recwebsite1" value="Yes" >
+            <label for="recwebsite1">Yes</label>
+
+            <input type="radio" name="recwebsite" id="recwebsite2" value="No" >
+            <label for="recwebsite2">No</label><br><br>
+
+            <label for="Offers">Would you like to recieve updates about the website and any offers?</label><br><br>
+            <select name="Offers" id="Offers">
+                <option value="e-mailopt">Via-E-mail</option>
+                <option value="smsopt">Via-SMS</option>
+            </select><br><br>
+
+            <label for="reqs2">Do you have any additional questions or requests? </label><br>
+            <textarea id="reqs2" name="reqs" placeholder="Add your message here..." required></textarea><br><br>
+
+            <!-- Form buttons -->
+            <input class="but" type ="reset" value ="Reset">
+            <input class="but2" type ="submit" value ="Send">
+
+        </fieldset>
+
+    </form> 
+<!-- Script file for form handling -->
+<script src="javascript/projectscript.js"></script>
+<div class="ftr"></div>
+
+<footer>
+    <!-- Logo in footer -->
+    <img src="images/logo.png"  alt="logo" height="105" width="105" style="padding: 10px;">
+    <!-- Copyright information -->
+    <p id="copy">&copy; 2024 Plax. All rights reserved. Designed by <a href="pageeditor.html" target="_blank"><i>Pamitha kularathne</i></a></p>
+</footer>
+</body>
+</html>

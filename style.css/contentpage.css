@@ -1,0 +1,313 @@
+/* Reset default margin, padding, and box-sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Header styles */
+header {
+    position: fixed;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    background-color: #00463d;
+    color: #fff;
+    padding: 20px;
+}
+/* Logo styles */
+#logo{
+    height: 75px;
+    width: 75px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.466), 0 1px 5px rgba(0, 0, 0, 0.3);
+}
+/* Navigation styles */
+nav {
+    display: flex;
+    background-color: #ffffff;
+    padding: 5px;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #00463d;
+}
+/* Navigation list item styles */
+.navlist li {
+    display: inline-block;
+    padding: 15px 30px 0px 15px;
+    color: aliceblue;
+    font-family: Poppins;
+    font-weight: bold;
+    position: sticky;
+    overflow: hidden;
+}
+/* Navigation link styles */
+.navlist li a {
+    color:#00463d;
+    text-decoration: none;
+    font-size: 20px;
+}
+/* Navigation link pseudo-element styles */
+.navlist li a::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #00463d;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+
+}
+/* Navigation link hover styles */
+.navlist li a:hover::after{
+    width: 70%;
+}
+/* Navigation link hover styles */
+.navlist li a:hover {
+    color: rgb(22, 126, 1);
+}    
+/* Navigation link active styles */
+.navlist li a:active {
+    color: rgb(9, 122, 85);
+}
+/* Heading for climate section styles */
+.climhed{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    display: inline;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    background-color: #002a46;
+    color: white;
+    font-size: 35px;
+    padding: 10px;
+    font-weight: bold;
+    font-family: 'Lemon/Milk', sans-serif;
+    animation: fadeIn 1.5s forwards;
+}
+/* Text for climate section styles */
+.climtxt{
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    color:rgb(3, 43, 43);
+    font-size: 24px;
+    font-family: Poppins;
+    background: rgba(255, 255, 255, 0.548);
+    backdrop-filter: blur(15px);
+    border-radius: 25px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 5px rgba(0, 0, 0, 0.08);
+    
+}
+.climtxt a{
+    text-decoration: none;
+    color: #002a46;
+}
+
+/* Heading and text styling for the points on climate action prevention */
+#climsithed1{
+    position: absolute;
+    top: 128%;
+    left: 5%;
+    transform: translate(-0%,-50%);
+    text-align: center;
+    color: white;
+    background-color: #00463d;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Lemon/Milk', sans-serif;
+    animation: fadeIn 1.5s forwards;
+}
+.climsittxt1{
+    position: absolute;
+    top: 167%;
+    left: 6.3%;
+    width: 400px;
+    transform: translate(-0%,-50%);
+    text-align: center;
+    color:rgb(3, 43, 43);
+    font-size: 20px;
+    font-family: Poppins;
+    background: rgba(255, 255, 255, 0.548);
+    backdrop-filter: blur(15px);
+    border-radius: 25px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 5px rgba(0, 0, 0, 0.08);
+}
+
+#climsithed2{
+    position: absolute;
+    top: 128%;
+    left: 37.3%;
+    transform: translate(-0%,-50%);
+    text-align: center;
+    color: white;
+    background-color: #00463d;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Lemon/Milk', sans-serif;
+    animation: fadeIn 1.5s forwards;
+}
+.climsittxt2{
+    position: absolute;
+    top: 167%;
+    left: 47%;
+    width: 400px;
+    transform: translate(-30%,-50%);
+    text-align: center;
+    color:rgb(3, 43, 43);
+    font-size: 20px;
+    font-family: Poppins;
+    background: rgba(255, 255, 255, 0.548);
+    backdrop-filter: blur(15px);
+    border-radius: 25px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 5px rgba(0, 0, 0, 0.08);
+}
+#climsithed3{
+    position: absolute;
+    top: 128%;
+    left: 72.5%;
+    transform: translate(-0%,-50%);
+    text-align: center;
+    color: white;
+    background-color: #00463d;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Lemon/Milk', sans-serif;
+    animation: fadeIn 1.5s forwards;
+}
+.climsittxt3{
+    position: absolute;
+    top: 167%;
+    left: 81%;
+    width: 400px;
+    transform: translate(-30%,-50%);
+    text-align: center;
+    color:rgb(3, 43, 43);
+    font-size: 20px;
+    font-family: Poppins;
+    background: rgba(255, 255, 255, 0.548);
+    backdrop-filter: blur(15px);
+    border-radius: 25px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 5px rgba(0, 0, 0, 0.08);
+}
+#prevhed1{
+    position: absolute;
+    top: 233%;
+    left:25%;
+    transform: translate(-50%,-50%);
+    text-align:center;
+    font-size: 30px;
+    color: white;
+    background-color: #00463d;
+    padding: 10px;
+    font-weight: bold;
+    font-family: 'Lemon/Milk', sans-serif;
+    animation: fadeIn 1.5s forwards;
+}
+.prevtxt1{
+    position: absolute;
+    top: 288%;
+    left: 20%;
+    transform: translate(-30%,-50%);
+    width: 500px;
+    text-align: center;
+    color:rgb(3, 43, 43);
+    font-size: 24px;
+    font-family: Poppins;
+    background: rgba(255, 255, 255, 0.548);
+    backdrop-filter: blur(15px);
+    border-radius: 25px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 5px rgba(0, 0, 0, 0.08);
+}
+#prevhed2{
+    position: absolute;
+    top: 233%;
+    left: 75%;
+    transform: translate(-50%,-50%);
+    font-size: 30px;
+    text-align: center;
+    color: white;
+    background-color: #00463d;
+    padding: 10px;
+    font-weight: bold;
+    font-family: 'Lemon/Milk', sans-serif;
+    animation: fadeIn 1.5s forwards;
+}
+.prevtxt2{
+    position: absolute;
+    top: 288%;
+    left: 69%;
+    transform: translate(-30%,-50%);
+    width: 500px;
+    text-align: center;
+    color:rgb(3, 43, 43);
+    font-size: 24px;
+    font-family: Poppins;
+    background: rgba(255, 255, 255, 0.548);
+    backdrop-filter: blur(15px);
+    border-radius: 25px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 5px rgba(0, 0, 0, 0.08);
+}
+/* Image 2 styles */
+#img2{
+    position: absolute;
+    top: 150.4%;
+    left: 49.8%;
+    transform: translate(-50%,-50%);
+    width: 1904px;
+    height: 1000px;
+}
+
+/* Image 3 styles */
+#img3{
+    position: absolute;
+    top: 285%;
+    left: 49.8%;
+    transform: translate(-50%,-50%);
+    width: 1904px;
+    height: 1500px;
+}
+/* Footer styles */
+.ftr{
+position: absolute;
+text-align: center;
+background-color: #00463d;
+height: 170px;
+width: 1904px;
+top: 365%;
+}
+/* Footer container styles */
+footer{
+position: absolute;
+top: 367.7%; 
+left: 50%;
+transform: translate(-50%,-0%);
+background-color: #ffffff;
+height: 115px;
+width: 1904px;
+}
+/* Copyright text styles */
+#copy {
+position: absolute;
+top: 83%; 
+left: 50%;
+transform: translate(-50%,-0%);
+text-align: center;
+}
+/* Footer logo styles */
+#footerlogo{
+position: absolute;
+top: 156%; 
+left: 40%;
+transform: translate(-40%,-60%);
+}

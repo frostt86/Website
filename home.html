@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Title of the webpage -->
+    <title>Plax - Home</title>
+
+    <!-- Link to external CSS file for styling -->
+    <link rel="stylesheet" href="style.css/homestyle.css">
+
+     <!-- Link to external font -->
+    <link href="https://fonts.cdnfonts.com/css/lemonmilk" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+</head>
+<body>
+    <header>
+        <nav>
+            <!-- Logo with link to home page -->
+            <a href="home.html"> <img id="logo" src="images/logo.png" alt="logo"></a>
+            <!-- Navigation menu -->
+            <ul class="navlist">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="sitemap.html">Site map</a></li>
+                <li><a href="team.html">Team</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <!-- Account icon -->
+                <li><a href="userprofile.html"><span class="material-symbols-outlined" style="font-size: 40px; top: 10%; background-color:#002746;color: aliceblue;border-radius:50% ;">
+                    account_circle
+                    </span></a></li>
+            </ul>
+        </nav>
+    </header>
+ <!-- Main content section -->
+<div class="content">
+
+    <!-- Section for mission statement -->
+    <section class="missionx" >
+        <img src="images/transforming-tourism-for-climate-action.jpg" alt="Forest image" class="image">
+        <div >
+            <!-- Mission statement -->
+            <div class="mission"><h2>OUR MISSION.</h2></div>
+
+            <!-- Mission description -->
+            <div class="missiontxt">
+                <p>"Our mission is to mobilize individuals worldwide in the fight against climate change. Through advocacy, education, and community-building, we strive to foster
+                     a sustainable future for generations to come. Join us in our commitment to environmental stewardship and positive action."</p>
+            </div>
+
+            <!-- Link to know more -->
+            <a href="team.html" id="Contactus">Know more About us</a> 
+        </div>
+    </section>
+   <!-- Section for introduction -->
+   <section class="Introduction">
+        <div class="box">
+            <!-- Introduction header -->
+            <h2 id="intro">Why help change the climate action?</h2>
+
+            <!-- Introduction text with expanding feature -->
+            <p id="introtxt">"Climate change, urgent global challenge, results from human activities, causing shifts in temperature, precipitation, and atmospheric conditions."</p>
+            <p id="expandableText" >"Climate change impacts ecosystems, weather patterns, sea levels, and societies, leading to environmental degradation, extreme weather, loss of biodiversity, 
+                and threats to food security. Collective action is essential for sustainability."  </p>
+            <button id="expandBtn" onclick="toggleText()">Read More</button>
+        </div>
+    </section>
+    <!-- Section for video and information to raise awareness -->
+    <section class="vid1">
+        <!-- Image and video boxes -->
+        <img id="vidimg" src="images/climatedesk_science_GettyImages-1421879831-(1).webp" alt="Gradient">
+        <div>
+            <div class="box2"> 
+                <h2 id="Vidtopic">Raising Awareness</h2>
+                <p class="vid">"Rising temperatures, shifting weather patterns, greenhouse gas emissions. Dire consequences on ecosystems, biodiversity, societies.
+                     Inspire positive change for a sustainable future."
+            </p></div>
+        </div>
+        <div>
+            <div class="box3"> 
+                <p class="vid">Rising sea levels leading to coastal erosion, inundation of low-lying areas, and loss of habitat for marine life.
+            </p></div>
+        </div>
+        <div>
+            <div class="box4"> 
+                <p class="vid">Increased frequency of extreme weather events such as hurricanes, floods, and heatwaves.
+            </p></div>
+        </div>
+        <div>
+            <div class="box5"> 
+                <p class="vid">Loss of biodiversity due to habitat destruction, altered ecosystems, and extinction of species, disrupting delicate ecological balances.
+            </p></div>
+        </div>
+        <section id="con">
+            <!--Content page links -->
+        <div class="contpage"><ul>
+            <li><a href="content_page_O.html" id="st1">Introduction</a></li>
+            <li><a href="content.html" id="st2">Cause</a></li>
+            <li><a href="contentpageT.html" id="st3">Impacts</a></li>
+            <li><a href="contentpage.html" id="st4">Prevention</a></li>
+        </ul>
+        </div> 
+        </section>
+        <!-- Video player -->
+        <div class="Video">
+            <video width="640" height="360" controls>
+                <source src="images/3186590-hd_1920_1080_30fps.mp4" type="video/mp4">
+                bowser doesnt support the video tag
+            </video>
+        </div>
+    </section>
+
+    <!-- Section for data and statistics -->
+    <section class="data">
+        <!-- Images and data header -->
+        <div>
+            <img class="databack" src="images/iStock-1180072881-1024x683.webp" alt="Polluted air">
+        </div>
+        <div>
+            <img id="dataimg" src="images/1951-_Percent_of_record_temperatures_that_are_cold_or_warm_records.svg.png" alt="chart on rising heat">
+        </div>
+        <!-- Data header -->
+        <div class="datahed"><h2>Why is this a problem?</h2></div>
+        <!-- Data description -->
+        <div class="datatxt">
+            <p >"As temperatures climb, so do the stakes. With each degree of warming, we witness a cascade of impacts: more frequent extreme weather events, like hurricanes and wildfires,
+                 and a surge in sea levels, imperiling coastal communities. The statistics paint a dire picture: record-breaking heatwaves, melting polar ice caps, and a ticking clock on 
+                 our planet's future. Urgent action is not just a choice; it's a necessity for our survival."</p>
+        </div>   
+    </section>
+
+     <!-- Section for testimonials -->
+    <section class="testimonials">
+        <!-- Testimonial images -->
+        <img id="test" src="images/MK-scaled.webp" alt="Glaciers">
+
+        <h2 id="Customers">What People Say About Us</h2>
+         <!-- Testimonials and boxes-->
+        <div class="testimonial">
+            <p>"Discovering this website has been a game-changer for me. The insightful articles and resources have empowered me to  take meaningful action against climate change. I 
+                feel more informed and motivated than ever before. Thank you for making a difference!" </p>
+            <p class="customer-name">- John Doe</p>
+        </div>
+        <div class="testimonial">
+            <p>"As a concerned citizen, I've been searching for a platform that not only educates but also inspires action. This website does exactly that.It's a hub of knowledge
+                 and advocacy, where I've found like-minded individuals committed to combating climate change.Together, we're making a real impact."</p>
+            <p class="customer-name">- Jane Smith</p>
+        </div>
+        <div class="testimonial">
+            <p>"I stumbled upon this website while researching climate solutions, and I'm so glad I did. The comprehensive guides and practical tips have helped me reduce my carbon
+                 footprint and live more sustainably. It's comforting to know that there are resources like this available to support individuals in their journey toward a greener future." </p>
+            <p class="customer-name">- Alice Johnson</p>
+        </div>
+        <div class="testimonial">
+            <p>"I've always been passionate about environmental issues, but I struggled to find reliable information amidst all the misinformation out there. This website has been
+                 a breath of fresh air. The articles are well-researched and backed by science, making it easy to separate fact from fiction. It's become my go-to resource for staying informed and engaged."</p>
+            <p class="customer-name">- Bob Williams</p>
+        </div>
+        <div class="testimonial">
+            <p>"As a teacher, I'm always looking for educational materials to incorporate into my curriculum. This website has been a goldmine of educational resources on climate 
+                change. The interactive multimedia content have captivated my students and sparked meaningful discussions about sustainability and environmental stewardship. Thank 
+                you for providing such valuable resources!"</p>
+            <p class="customer-name">- Emily Brown</p>
+        </div>
+        <!-- Button to view more testimonials -->
+        <button id="nextBtn">Next</button>
+    </section>
+
+    <!-- Section for joining -->
+    <section class="joinus">
+        <div>
+            <!-- Image and join us information -->
+            <img src="images/nikola-jovanovic-OBok3F8buKY-unsplash.jpg" alt="Save the earth" id="saveerth">
+        </div>
+        <div >
+            <h2 class="joinustop">Why join us?</h2>
+            <p class="joinustxt">Join us to make a difference by raising awareness, accessing resources, collaborating, taking action, creating a greener future, fostering
+                 personal growth, and being part of a global movement for urgent climate action.</p>
+        </div>
+         <!-- Button to join -->
+        <div><a href="userprofile.html" id="join">Join the team</a> </div>
+    </section>
+</div>
+
+<button onclick="topFunction()" id="backToTopBtn" title="Go to top"><span class="material-symbols-outlined" style="font-size: 40px;">expand_less</span></button>
+<!-- Script file for scrolling and functionality -->
+<script src="javascript/script.js"></script>
+
+<div class="ftr"></div>
+<!-- Footer section -->
+<footer>
+    <!-- Logo in footer -->
+    <img src="images/logo.png"  alt="logo" height="105" width="105" style="padding: 10px;">
+     <!-- Copyright information -->
+    <p id="copy">&copy; 2024 Plax. All rights reserved. Designed by <a href="pageeditor.html" target="_blank"><i>Pamitha kularathne</i></a></p>
+
+</footer>
+
+</body>
+</html>

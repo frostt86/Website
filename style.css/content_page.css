@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+h1{
+    text-align: center;
+    padding: 20px;    
+    font-weight: bolder;
+    font-size: 50px;
+}
+body{
+    background-image: url('../images/contentback.jpg');
+    background-color: rgba(249, 249, 249, 0.5);
+    padding-bottom: 100px;
+    font-family: Poppins;
+}
+header {
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    background-color: #005249;
+    color: #fff;
+    padding: 20px;
+    position: sticky;
+    
+}
+
+#logo{
+    height: 75px;
+    width: 75px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.466), 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+nav {
+    display: flex;
+    background-color: #ffffff;
+    padding: 5px;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #005249;
+    
+}
+
+.navlist li {
+    display: inline-block;
+    padding: 15px 30px 0px 15px;
+    color: aliceblue;
+    font-family: Poppins;
+    font-weight: bold;
+    position: sticky;
+    overflow: hidden;
+    
+}
+
+.navlist li a {
+    color: #005249;
+    text-decoration: none;
+    font-size: 20px;
+}
+.navlist li a::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #005249;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+
+}
+.navlist li a:hover::after{
+    width: 70%;
+}
+.navlist li a:hover {
+    color: rgb(22, 126, 1);
+}    
+
+.navlist li a:active {
+    color: aquamarine;
+}
+
+.definition{
+    text-align: center;
+    padding: 10px;
+    background-color: antiquewhite;
+    border-radius: 20px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.content{
+    
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    transition: transform .5s;
+}
+.container {
+    width: 80%; /* Adjust width as needed */
+    display: flex;
+    align-items: center;
+    margin: 20px auto; /* Center the container */
+    border: 2px solid #ccc; /* Add a border */
+    padding: 20px; /* Add some padding */
+    border-radius: 10px; /* Add rounded corners */
+    background-color: #f9f9f9; /* Background color */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a shadow */
+    
+}
+
+/* Style for the image */
+img {
+    max-width: 300px; /* Make sure the image doesn't overflow its container */
+    max-height: 300px;
+    display: block; /* Make the image a block element */
+    margin-bottom: 10px; /* Add some space below the image */
+    margin-right: 20px;
+    float: left;
+    border-radius: 20px;
+}
+
+/* Style for the text container */
+.dec{
+    font-size: 16px; /* Set font size */
+    padding: 20px;
+}
+
+.dec h2{
+    padding: 10px;
+}
+

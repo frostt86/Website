@@ -1,0 +1,67 @@
+*{
+	padding:0;
+	margin:0;
+	
+}
+body{
+	background-image:url("../images/beautiful-jokulsarlon-glacier-lagoon-iceland-with-sun-beams-from-dark-cloudy-sky.jpg");
+	background-attachment:fixed;
+	background-position:center;
+	width:100vw;
+	overflow-x:hidden;
+	background-size:cover;
+	
+}
+.logo{
+	
+	height: 50px;
+	width: 50px;
+	position: absolute;
+	top: 7%;
+	left: 30%;
+	transform: translate(-50%,0%);
+}
+.Box{
+	margin-top:50px;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	
+	
+}
+p{
+	font-family: 'Times New Roman', Times, serif;
+	font-weight: bold;
+}
+.Inner_box{
+	background:rgb(255,255,255,0.7);
+	padding: 20px;
+	
+	
+}
+.Inner_box h1{
+	font-size:45px;
+}
+.Inner_box p{
+	margin:10px;
+	font-size:18px;
+}
+
+.container{
+	margin-top: 100px;
+	display: flex;
+	background: rgb(255,255,255,0.7);
+	width: auto;
+	margin-right: 100px;
+	margin-left: 100px;
+	align-items: center;
+	justify-content: center;
+	
+}
+
+.container > div{
+	margin: 10px;
+	padding: 20px;
+	font-size: 20px;
+}
+

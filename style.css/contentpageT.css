@@ -1,0 +1,206 @@
+body{
+    font-family: Poppins;
+}
+
+header {
+    background-position: center;
+    background-size: cover;
+    position: sticky;
+    position: relative;
+    background-color: #00463d;
+    color: #fff;
+    padding: 20px;
+    
+}
+
+#logo{
+    height: 75px;
+    width: 75px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.466), 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+nav {
+    display: flex;
+    background-color: #ffffff;
+    padding: 5px;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #00463d;
+    
+}
+
+.navlist li {
+    display: inline-block;
+    padding: 1px 30px 0px 1px;
+    color: aliceblue;
+    font-family: Poppins;
+    font-weight: bold;
+    position: sticky;
+    overflow: hidden;
+    
+}
+
+.navlist li a {
+    color:#00463d;
+    text-decoration: none;
+    font-size: 20px;
+}
+.navlist li a::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #005249;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+
+}
+.navlist li a:hover::after{
+    width: 70%;
+}
+.navlist li a:hover {
+    color: rgb(22, 126, 1);
+}    
+
+.navlist li a:active {
+    color: aquamarine;
+}
+
+#image1 {
+    width: 1885px;
+    height: auto;
+}
+
+.imageTextContainer {
+    position: relative;
+    display: inline-block;
+}
+
+.imageText {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 70px;
+    font-weight: bolder;
+    text-shadow: 0 0 10px black;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 70px;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #005249c5;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: lighter;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s; /* Added color transition */
+}
+
+.button:hover {
+    background-color: #43cfbf;
+    color: #000; /* Change text color to black on hover */
+}
+
+.content1{
+    margin-left: 200px;
+}
+
+.content1Background{
+    background-color: #00524983; 
+    text-align: center;
+    padding-bottom: 10px;
+    font-size: 14px;
+}
+
+h1,p{
+    margin: 5px;
+    
+}
+
+.content2image1{
+    float: right;
+    padding-left: 3px;
+    
+    
+}
+
+#content2Background{
+    text-align: center;
+    font-size: 14px;
+}
+
+.para2{
+    padding-bottom: 20px;
+}
+
+.impact{
+    border: 2px solid black;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: #00463d91;
+
+}
+
+.para3{
+    padding-bottom: 30px;
+}
+
+.content2image2{
+    float: left;
+}
+
+.para4{
+    padding-bottom: 50px;
+}
+
+.final{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #ffffff6d;
+    
+}
+.ftr{
+    position: absolute;
+    text-align: center;
+    background-color: #00463d;
+    height: 150px;
+    width: 100%;
+    top:2660px;
+   
+}
+footer{
+    position: absolute;
+    top:2688px;
+    left: 50%;
+    transform: translate(-50%,-1%);
+    background-color: #ffffff;
+    height: 100px;
+    width: 100%;
+}
+#copy {
+    text-align: center;
+    position: absolute;
+    top:65%;
+    left: 50%;
+    transform: translate(-50%,-1%);
+}
+
+
+#footerlogo{
+    top: 2500px; /* Adjust top value as needed */
+    left: 40%;
+    transform: translate(-40%,-60%);
+}
+
+
+
